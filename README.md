@@ -1,6 +1,6 @@
 # The Bank That Robbed Itself: How Truong My Lan Stole $44 Billion and Shook Vietnam
  
-View project here: [https://chilinhhovo.github.io/bank_heist/](https://chilinhhovo.github.io/heist-5/)
+View project here: https://chilinhhovo.github.io/heist-5/
 
 # Goal 
 To understand Vietnam's financial system 
