@@ -547,6 +547,67 @@
         left: 10px;
       }
     }
+
+    .overlay {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 16px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+    }
+    .info-btn {
+      background: none;
+      border: none;
+      color: #00f5cc;
+      font-size: 18px;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+
+    /* Add or update this CSS in the <style> section */
+    @media (max-width: 640px) {
+      .mobile-map-sections {
+        padding: 0;
+        margin: 0;
+      }
+      .map-section {
+        margin-bottom: 1.5rem;
+        padding: 0;
+      }
+      .map-img-wrapper {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        overflow: hidden;
+      }
+      .map-img-wrapper img {
+        width: 100vw;
+        display: block;
+        border-radius: 0;
+      }
+      .map-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        color: #fff;
+        font-size: 1rem;
+        padding: 0.75em 1em;
+        box-sizing: border-box;
+        text-align: left;
+        font-weight: 500;
+      }
+    }
   </style>
   <link href="scrolly-styles.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -2294,25 +2355,25 @@
         <p class="g-pstyle0">Truong My Lan and accomplices embezzled more than 50% of Saigon Commercial Bank's total finance </p>
       </div>
       <div id="g-ai2-2" class="g-Layer_4 g-aiAbs" style="top:25.0119%;left:5.0831%;width:86.6667%;">
-        <p class="g-pstyle1">At the time of arrest 2022, the financial status of Saigon Commercial Bank (SCB) in billion USD </p>
+        <p class="g-pstyle1">SCB's financial status at arrest (2022) in billion USD</p>
       </div>
       <div id="g-ai2-3" class="g-Layer_4 g-aiAbs" style="top:44.3068%;left:6.6528%;width:88.8%;">
-        <p class="g-pstyle2">Truong My Lan and accomplices' debts (27.42B)</p>
+        <p class="g-pstyle2">VTP debts: 27.42B</p>
       </div>
       <div id="g-ai2-4" class="g-Layer_4 g-aiAbs" style="top:52.8823%;left:6.6831%;width:64.2667%;">
-        <p class="g-pstyle2">Retail customers' deposits (20.66B)</p>
+        <p class="g-pstyle2">Customer deposits: 20.66B</p>
       </div>
       <div id="g-ai2-5" class="g-Layer_4 g-aiAbs" style="top:61.2196%;left:17.8831%;width:51.4667%;">
-        <p class="g-pstyle3">Valuable papers (3.11B) </p>
+        <p class="g-pstyle3">Valuable papers: 3.11B</p>
       </div>
       <div id="g-ai2-6" class="g-Layer_4 g-aiAbs" style="top:69.0805%;left:15.4831%;width:76.8%;">
-        <p class="g-pstyle3">Loan to the State bank of Vietnam (2.67B)</p>
+        <p class="g-pstyle3">State bank loan: 2.67B</p>
       </div>
       <div id="g-ai2-7" class="g-Layer_4 g-aiAbs" style="top:77.4178%;left:9.0831%;width:76.8%;">
-        <p class="g-pstyle3">Credit organizations' deposits (510M)</p>
+        <p class="g-pstyle3">Credit org deposits: 510M</p>
       </div>
       <div id="g-ai2-8" class="g-Layer_4 g-aiAbs" style="top:85.7551%;left:5.4287%;width:80.5333%;">
-        <p class="g-pstyle3">Source: Supreme People's Procuracy of Vietnam via VNExpress</p>
+        <p class="g-pstyle3">Source: Supreme People's Procuracy via VNExpress</p>
       </div>
     </div>
   
@@ -2867,10 +2928,9 @@
             <p>These properties represent peak luxury in Ho Chi Minh City, housing the six-star Reverie Hotel and elite brands like Tiffany & Co., Bentley, and Piguet.</p>
           </div>
           <div class="step" id="step4">
-            <p>Lan's empire began in Ho Chi Minh City's Chinatown</p>
+            <p>Lan's empire began in Chinatown.<a href="https://dangcongsan.vn/phap-luat/chu-tich-van-thinh-phat-rua-tien-thong-qua-dau-tu-bat-dong-san-chuyen-tien-ra-nuoc-ngoai-656646.html"> Authorities</a> say she used real estate to launder money and secure loans.
           </div>
           <div class="step" id="step5">
-            <p>According to the<a href="https://dangcongsan.vn/phap-luat/chu-tich-van-thinh-phat-rua-tien-thong-qua-dau-tu-bat-dong-san-chuyen-tien-ra-nuoc-ngoai-656646.html"> Communist Party of Vietnam's publication</a>, Truong My Lan used real estate both to launder money and as collateral for loans.</p>
           </div>
         </div>
       </section>
@@ -2878,38 +2938,28 @@
       <!-- Add mobile comic strip version -->
       <div class="mobile-map-sections content">
         <div class="map-section">
+          <div class="map-img-wrapper">
             <img src="content/map/map2.png" alt="Map of Ho Chi Minh City">
-            <div class="text">
-                <p>Ho Chi Minh city is the most populous and largest commercial megapolis city in Vietnam.</p>
-            </div>
+            <div class="map-caption">Ho Chi Minh City: Vietnam's largest commercial hub</div>
+          </div>
         </div>
-
         <div class="map-section">
+          <div class="map-img-wrapper">
             <img src="content/map/map3.png" alt="District 1 properties">
-            <div class="text">
-                <p>Van Thinh Phat's commercial buildings are mostly clustered in District 1's prized "golden" and "diamond" zones, known for sky-high property values and central location.</p>
-            </div>
+            <div class="map-caption">VTP's properties cluster in District 1's premium zones</div>
+          </div>
         </div>
-
         <div class="map-section">
+          <div class="map-img-wrapper">
             <img src="content/map/map4.png" alt="Luxury properties">
-            <div class="text">
-                <p>These properties represent peak luxury in Ho Chi Minh City, housing the six-star Reverie Hotel and elite brands like Tiffany & Co., Bentley, and Piguet.</p>
-            </div>
+            <div class="map-caption">Home to luxury brands and the six-star Reverie Hotel</div>
+          </div>
         </div>
-
         <div class="map-section">
+          <div class="map-img-wrapper">
             <img src="content/map/map5.png" alt="Chinatown origins">
-            <div class="text">
-                <p>Lan's empire began in Ho Chi Minh City's Chinatown, where she rose from fabric vendor to owning the area's biggest market, hotels, and housing</p>
-            </div>
-        </div>
-
-        <div class="map-section">
-            <img src="content/map/map6.png" alt="Money laundering through real estate">
-            <div class="text">
-                <p>According to the<a href="https://dangcongsan.vn/phap-luat/chu-tich-van-thinh-phat-rua-tien-thong-qua-dau-tu-bat-dong-san-chuyen-tien-ra-nuoc-ngoai-656646.html">Communist Party of Vietnam's publication</a>, Truong My Lan used real estate both to launder money and as collateral for loans.</p>
-            </div>
+            <div class="map-caption">Lan's empire began in Chinatown. Authorities say she used real estate to launder money and secure loans.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -2923,7 +2973,7 @@
 
         <p> The Communist Party's "Blazing Furnace" anti-corruption campaign, led by former Secretary-General Nguyen Phu Trong, has expanded its focus to banking institutions. Authorities are enforcing stricter lending regulations and increasing transparency requirements.</p>
         <p> Dr. Nguyen notes:</p>
-        <p><italic>"The common red flags in corporate governance are cross-ownership between banks and firms (as borrowers),"</italic></p>
+        <p><italic>"The common red flags in corporate governance are cross-ownership between banks and firms (as borrowers)."</italic></p>
     </div>
     <div class="content">
         <h2>What does this mean for foreign investors?</h2>
