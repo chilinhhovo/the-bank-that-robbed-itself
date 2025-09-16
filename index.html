@@ -5,6 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bank heist</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="website-logo.png">
+  <link rel="shortcut icon" type="image/png" href="website-logo.png">
+  <link rel="apple-touch-icon" href="website-logo.png">
+  
   <script src="https://d3js.org/d3.v6.min.js"></script>
 
 
@@ -607,6 +613,56 @@
         text-align: left;
         font-weight: 500;
       }
+      
+      /* Fix ai2html overlay boxes for mobile */
+      .ai2html .g-aiAbs.g-aiPointText {
+        width: auto !important;
+        max-width: 80vw !important;
+        min-width: auto !important;
+        margin-left: 0 !important;
+        left: 5% !important;
+        right: 5% !important;
+      }
+      
+      .ai2html .g-aiAbs.g-aiPointText p {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+      }
+      
+      /* Specific fixes for mobile artboards */
+      #g-template-_1_-mobile .g-aiAbs,
+      #g-flowchart-mobile .g-aiAbs,
+      #g-cash-flow-mobile .g-aiAbs,
+      #g-2022_finance-mobile .g-aiAbs,
+      #g-VLP_s-ecosystem-mobile .g-aiAbs {
+        width: auto !important;
+        max-width: 90vw !important;
+        left: 5% !important;
+        right: 5% !important;
+        margin-left: 0 !important;
+      }
+      
+      /* Make artboards more responsive */
+      .ai2html .g-artboard {
+        max-width: 100vw !important;
+        margin: 0 auto !important;
+      }
+      
+    }
+    
+    /* Additional responsive fixes for very small screens */
+    @media (max-width: 480px) {
+      .ai2html .g-aiAbs.g-aiPointText {
+        max-width: 85vw !important;
+        left: 7.5% !important;
+        right: 7.5% !important;
+      }
+      
+      .ai2html .g-aiAbs.g-aiPointText p {
+        font-size: 12px !important;
+      }
     }
   </style>
   <link href="scrolly-styles.css" rel="stylesheet">
@@ -622,7 +678,7 @@
   <div class="full-width-wrapper">
     <div class="content">
       <div class="header">
-        <p class="date"> Feb 2025 </p>
+        <p class="date"> Feb. 16, 2025 </p>
         <h1>The Bank That Robbed Itself </h1>
         <h3>How Truong My Lan Stole $44 Billion and Shook Vietnam</h3>
         <h4>The largest financial fraud case in Vietnam's history</h4>
